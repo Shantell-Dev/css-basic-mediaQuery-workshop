@@ -1,0 +1,64 @@
+/* Default Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, section, footer {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+    
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+    
+    main section {
+        margin: 2rem 0;
+    }
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 601px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* CSS Units and Functions */
+header h1 {
+    font-size: calc(1.5rem + 1vw);
+}
+
+nav ul li {
+    font-size: clamp(14px, 1.5vw, 18px);
+    margin: 0.5rem;
+}
+
+footer {
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+  
+  
+  
+  
+  
+  
+  
